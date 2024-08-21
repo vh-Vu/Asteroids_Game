@@ -2,6 +2,7 @@
 # the open-source pygame library
 # throughout this file
 import pygame
+import sys
 from constants import *
 
 pygame.init()
@@ -12,11 +13,11 @@ def main():
     print(f'Screen width: {SCREEN_WIDTH}')
     print(f'Screen height: {SCREEN_HEIGHT}')
     while True:
+        screen.fill((244,244,244))
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
-        screen.fill((255,255,255))
+                return
+        
         pygame.display.flip()
 
 

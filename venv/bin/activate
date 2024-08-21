@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/vulinux/workspace/github.com/vh-Vu/Asteroids_Game/Asteroids_Game/venv"
+VIRTUAL_ENV=$(cygpath "D:\Project\Asteroids_Game\venv")
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
